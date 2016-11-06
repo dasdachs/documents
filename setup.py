@@ -35,6 +35,6 @@ setup(
     ],
     entry_points='''
         [console_scripts]
-        documents=documents:main
+        documents=documents.main:main
     ''',
 )
