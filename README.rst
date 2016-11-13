@@ -15,14 +15,35 @@ Installation
 Usage
 =====
 
-Quick use
----------
+You can use **Documents** as a cli appliaction or as a module. 
 
-To use **Documents** simply run `documents` from you command line. For additional information 
+Cli app
+-------
+
+Simply run `documents` from you command line. For additional information 
 run `documents --help`.
 
-Detailed
---------
+Options
+~~~~~~~
+
+    --temp_dir      The path to the template directory. Default is ./templates
+    --extensions    Limit the template files by listing extensions
+    --template      The name of the templat)
+
+Module
+------
+
+If you want to integrate **Documents** into your app or you simpy want to play with the 
+module, just import `documents`.
+
+Example:
+
+    >>> from documents import get_env, get_templates
+    >>> get_templates(get_env())  # Returns a list of templates in the templates dir
+
+
+Developers
+==========
 
 What the app does is it looks into your templates directory - the default directory is `./templates` - 
 and returns the list of your templates.

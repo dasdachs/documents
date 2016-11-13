@@ -3,12 +3,12 @@ from setuptools import setup, find_packages
 setup(
     # Descriptions
     name='Documents',
-    version='0.1',
+    version='0.2',
     author='dasDachs',
     author_email='jani.sumak@gmail.com',
     description="Render document templates with jinja2 syntax.",
     # long_description=""""""
-    # url=''
+    url='https://github.com/dasdachs/documents',
     keywords='cli templates documents',
     classifiers=[
         'Development Status :: 4 - Beta',
@@ -35,6 +35,6 @@ setup(
     ],
     entry_points='''
         [console_scripts]
-        documents=documents.main:main
+        documents=documents.cli:main
     ''',
 )
