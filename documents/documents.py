@@ -1,6 +1,3 @@
-"""
-This is the main module of the file. It cointains the main functions.
-"""
 import os
 import os.path
 
